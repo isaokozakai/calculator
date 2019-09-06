@@ -60,6 +60,9 @@ window.onload = function () {
 
   function addButtonValueToTextBox(whichButton) {
     let resultBox = document.getElementById("result");
+    if (resultBox.textContent.length >= 20) {
+      return;
+    }
     let value = whichButton;
 
     switch (whichButton) {
